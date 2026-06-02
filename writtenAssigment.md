@@ -3,15 +3,15 @@
 
 Alejandro Atehortua Galeano
 
-# Building a Scalable Checklist App Using Design System Thinking
+# 1. Building a Scalable Checklist App Using Design System Thinking (C2)
 
-## 1. Introduction
+## 0. Introduction
 
 This project was developed as a scalable checklist application using React, TypeScript, Vite, and Storybook. The main objective was to apply design system thinking by creating reusable UI components, extracting design tokens from a Figma design, and maintaining code quality using ESLint and Prettier.
 
 Although the application is intentionally simple and contains no business logic, it demonstrates the core principles of a design system. The project includes reusable presentational components, centralized design tokens, automatic dark mode, and Storybook documentation. Together, these elements create a maintainable and scalable frontend foundation.
 
-## 2. Design System Thinking
+## 1. Design System Thinking
 
 ### What design tokens did you create?
 
@@ -61,7 +61,7 @@ Figma: Radius/12 → Code: --radius-md
 
 This alignment ensured that design and development used the same values and naming conventions.
 
-## 3. Component Architecture
+## 2. Component Architecture
 
 ### Which reusable components did you build?
 
@@ -93,7 +93,7 @@ All components were placed inside the src/components folder and written using Ty
 
 This structure makes it easy to add new components and reuse existing ones without duplication.
 
-## 4. Code Quality
+## 3. Code Quality
 
 ### How did Storybook support your development process?
 
@@ -129,7 +129,7 @@ Strict TypeScript typing
 Consistent folder structure
 Separation of presentation from business logic
 
-## 5. User Experience
+## 4. User Experience
 
 ### How does your solution create a consistent user experience?
 
@@ -153,7 +153,7 @@ Large clickable areas
 Responsive layout with proper spacing
 Automatic dark mode support
 
-## 6. Reflection
+## 5. Reflection
 
 ### If you had two more weeks, what would you improve and why?
 
@@ -167,10 +167,14 @@ Implement full checklist functionality with local storage.
 
 These improvements would make the design system more robust and production-ready.
 
-## 7. Conclusion
+## 6. Conclusion
 
 This project demonstrates how design system thinking can be applied to a practical frontend application.
 
 By defining design tokens, building reusable components, documenting them with Storybook, and enforcing code quality with ESLint and Prettier, I created a scalable and maintainable design system.
 
 The resulting solution provides a consistent and accessible user experience and establishes a strong foundation for future development.
+
+# 2. Automated Testing & Code Quality (S12)
+
+
