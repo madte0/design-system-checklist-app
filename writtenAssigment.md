@@ -177,4 +177,137 @@ The resulting solution provides a consistent and accessible user experience and 
 
 # 2. Automated Testing & Code Quality (S12)
 
+## 1. Why is automated testing important in modern frontend development?
+
+Automated testing is an essential part of modern frontend development because it helps developers verify that applications behave as expected. As projects grow, manually checking every feature after each change becomes time-consuming and unreliable. Automated tests provide a faster and more consistent way to identify problems before they reach users.
+
+One of the main benefits of automated testing is that it reduces the risk of introducing bugs when new features are added. Frontend applications often contain many interconnected components, and a small change in one area can unintentionally affect another. Automated tests quickly detect these regressions and help developers maintain confidence when modifying existing code.
+
+Automated testing also supports collaboration within development teams. Multiple developers can work on the same codebase while relying on a shared suite of tests to verify that changes do not break existing functionality. This creates a safer development environment and improves overall productivity.
+
+In addition, automated tests contribute to higher code quality. Developers are encouraged to write smaller, more predictable functions and components that are easier to test. This often results in cleaner architecture, better separation of concerns, and improved maintainability.
+
+For these reasons, automated testing has become a standard practice in professional frontend development workflows.
+
+## 2. What is the difference between unit testing, component/DOM testing, and end-to-end testing?
+
+Automated testing can be divided into several levels, each focusing on different parts of an application.
+
+### Unit Testing
+
+Unit tests verify the smallest pieces of code in isolation. These are typically functions, utility methods, or individual logic units.
+
+For example, a unit test could verify that a function correctly calculates the total number of completed tasks in a checklist application.
+
+Unit tests are usually fast, easy to write, and help identify logic errors early in development.
+
+### Component/DOM Testing
+
+Component testing focuses on how a user interface component behaves when rendered.
+
+Instead of testing only internal logic, component tests verify that users see the correct output and can interact with the component as expected.
+
+Examples include:
+
+> Checking that a button displays the correct text.
+> Verifying that an input field updates when a user types.
+> Confirming that a checkbox changes state when clicked.
+
+These tests provide confidence that individual UI components function correctly within the browser environment.
+
+### End-to-End Testing (E2E)
+
+End-to-end testing evaluates the entire application from the user's perspective.
+
+An E2E test simulates real user actions such as:
+
+> Opening the application.
+> Logging in.
+> Creating a task.
+> Marking the task as completed.
+
+These tests verify that all parts of the system work together correctly, including frontend, backend, routing, and APIs.
+
+Although E2E tests provide the highest level of confidence, they are usually slower and more complex than unit or component tests.
+
+A balanced testing strategy often combines all three types of testing.
+
+## 3. In what situations would you use Vitest?
+
+Vitest is a modern testing framework designed specifically for projects built with Vite. Since many React applications use Vite as their build tool, Vitest integrates naturally into the development workflow.
+
+Vitest is particularly useful for:
+
+### Testing Utility Functions
+
+Developers can verify that helper functions return the correct values under different conditions.
+
+Examples include:
+
+> Data formatting functions.
+> Validation logic.
+> Calculations.
+
+### Testing React Components
+
+Vitest works well together with React Testing Library, allowing developers to test rendered components and user interactions.
+
+Examples include:
+
+> Button click events.
+> Form validation.
+> Conditional rendering.
+
+### Fast Development Feedback
+
+Vitest provides very fast test execution because it uses the same infrastructure as Vite. Developers receive immediate feedback while coding, which improves productivity.
+
+### Continuous Integration
+
+Vitest can run automatically in CI/CD pipelines to ensure that code changes pass all tests before deployment.
+
+For frontend projects built with React and Vite, Vitest is often the preferred choice because of its speed, simplicity, and excellent integration with modern tooling.
+
+## 4. How can automated tests improve maintainability when a codebase grows?
+
+As applications become larger, maintaining code quality becomes increasingly challenging. Automated tests help manage this complexity in several ways.
+
+First, tests act as a safety net. Developers can refactor existing code with greater confidence because tests immediately indicate whether something has broken.
+
+Second, tests serve as documentation. Reading a test often makes it easier to understand how a function or component is expected to behave. New team members can learn the codebase more quickly by reviewing existing tests.
+
+Third, automated tests reduce debugging time. Instead of manually reproducing issues across different parts of the application, developers can run the test suite and quickly identify the source of a problem.
+
+Fourth, tests encourage modular design. Code that is easier to test is often more organized and easier to maintain. This leads to better separation between business logic, presentation logic, and reusable components.
+
+As a result, teams can continue adding features while keeping the application stable and manageable over time.
+
+## 5. What risks can occur when applications are developed without automated testing?
+
+Developing applications without automated testing introduces several risks.
+
+One major risk is the increased likelihood of regressions. Developers may unintentionally break existing functionality without realizing it. These problems might only be discovered after deployment, affecting users directly.
+
+Another risk is slower development. As projects grow, developers become hesitant to modify existing code because they cannot easily verify the impact of their changes. This creates technical debt and reduces productivity.
+
+Collaboration also becomes more difficult. Team members may introduce conflicting changes, and there is no automated mechanism to verify that everything still works correctly.
+
+Without tests, bug detection depends heavily on manual testing. This process is slower, less consistent, and more prone to human error.
+
+Additionally, onboarding new developers becomes harder because there is no automated documentation describing expected behavior.
+
+Over time, these issues can lead to lower code quality, increased maintenance costs, and a less reliable user experience.
+
+## 6. Conclusion
+
+Automated testing plays a critical role in modern frontend development. It improves code quality, supports team collaboration, and reduces the risk of introducing bugs.
+
+Different testing levels serve different purposes. Unit tests verify individual pieces of logic, component tests validate user interface behavior, and end-to-end tests ensure that the complete application works correctly from the user's perspective.
+
+Tools such as Vitest make testing fast and efficient for React and Vite projects. As applications grow, automated tests provide a safety net that improves maintainability and allows teams to develop with greater confidence.
+
+By incorporating automated testing into the development process, frontend teams can build more reliable, scalable, and maintainable applications.
+
+
+
 
